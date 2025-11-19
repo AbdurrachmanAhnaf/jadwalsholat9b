@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Sholat - BQ Islamic Boarding School</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/bq.png" type="image/x-icon">
+</head>
+<body>
+<header class="main-header">
+  <div class="header-content">
+    <img src="/images/logo-bq.png" alt="Logo" class="header-logo">
+    <h1 class="header-title">Jadwal Sholat BQ</h1>
+  </div>
+</header>
+
+
+  <main>
+    <div class="container-main">
+      <div class="info-top">
+        <div class="lokasi-box">
+          <h1 id="lokasi">Memuat lokasi...</h1>
+          <p id="tanggal-hari-ini">Memuat tanggal...</p>
+        </div>
+        <div class="jam-box">
+          <p id="live-clock">--:--:--</p>
+        </div>
+      </div>
+
+      <div class="next-prayer">
+        <h2>Waktu Sholat Berikutnya</h2>
+        <p><span id="next-prayer-name">---</span> dalam 
+          <span id="countdown-timer">--:--:--</span></p>
+      </div>
+
+      <div class="jadwal-cards">
+        <div class="card" data-prayer="Subuh"><h2>Subuh</h2><p id="subuh">--:--</p></div>
+        <div class="card" data-prayer="Dzuhur"><h2>Dzuhur</h2><p id="dzuhur">--:--</p></div>
+        <div class="card" data-prayer="Ashar"><h2>Ashar</h2><p id="ashar">--:--</p></div>
+        <div class="card" data-prayer="Maghrib"><h2>Maghrib</h2><p id="maghrib">--:--</p></div>
+        <div class="card" data-prayer="Isya"><h2>Isya</h2><p id="isya">--:--</p></div>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Cari nama kota...">
+        <button id="search-button">Cari</button>
+        <button id="detect-location-button">Gunakan Lokasi Saat Ini</button>
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Ahnaf Ganteng | Data by Kemenag</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
