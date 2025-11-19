@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--font-body);
-  background-image: url('/images/masjid\ buluk\'.jpg');
+  background-image: url('images/masjid\ buluk\'.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
